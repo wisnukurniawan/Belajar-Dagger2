@@ -32,6 +32,7 @@ public class DemoApplication extends Application {
                 .builder()
                 .applicationModule(new ApplicationModule(this))
                 .build();
+
         applicationComponent.inject(this);
     }
 

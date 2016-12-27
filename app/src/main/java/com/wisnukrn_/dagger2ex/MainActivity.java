@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     public ActivityComponent getActivityComponent(){
         if (activityComponent == null){
-            activityComponent = DaggerActivityComponent.builder()
+            activityComponent = DaggerActivityComponent
+                    .builder()
                     .activityModule(new ActivityModule(this))
                     .applicationComponent(DemoApplication.get(this).getComponent())
                     .build();
